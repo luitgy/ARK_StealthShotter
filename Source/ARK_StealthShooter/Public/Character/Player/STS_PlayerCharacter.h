@@ -44,4 +44,6 @@ class ARK_STEALTHSHOOTER_API ASTS_PlayerCharacter : public ASTS_BaseCharacter
 		// Called to bind functionality to input
 		virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+		virtual FVector GetPawnViewLocation() const override;
+
 };
